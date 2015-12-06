@@ -5,6 +5,7 @@ NOTE: The salt-minion configuration is done as an rc.local script that should be
 If left intact the script will double check that the EPEL repository is configured, and salt-minion is installed
 at every boot, which can slow boot times.
 
+# Partitioning
 The kickstart File will partition your system as follows:
 /boot          : Size: 200 MB
 /home          : Minimum: 5 GB, Maximum: 25 GB
@@ -15,7 +16,7 @@ The kickstart File will partition your system as follows:
 /              : Minimum 17 GB, Maximum: All remaining space
 
 
-Using gen-kickstart.sh:
+#Using gen-kickstart.sh:
 
 ./gen-kickstart.sh <hostname> <hostip> <host netmask> <gateway>
 
